@@ -1,3 +1,9 @@
 {
-    "tickers" : ["MSFT"]
+    "tickers" : [
+        {
+            "name" : "BTC-USD",
+            "period" : "max",
+            "interval" : "1m"
+        }
+    ]
 }

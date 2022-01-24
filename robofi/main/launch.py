@@ -9,9 +9,8 @@ import sys
 # Local Imports
 #-------------------------------------------------------------------------------
 
-from ..pricepredict import traintest
+from ..pricepredict import main
 
-################################################################################
 ################################################################################
 # Gets the command line arguments...
 #
@@ -49,7 +48,7 @@ def parse_cmd_line(as_dict=False):
 		default=defaults["log_level"],
 		help="""Log level of the program."""
 	)
-	parser_scraper.set_defaults(func=traintest.run)
+	parser_scraper.set_defaults(func=main.run)
 	
 	args = parser.parse_args()
 	if as_dict:
@@ -58,8 +57,7 @@ def parse_cmd_line(as_dict=False):
 	return args, parser
 
 ################################################################################
-################################################################################
-# Main...
+# Package entry point...
 #
 def main():
 	
@@ -79,8 +77,7 @@ def main():
 	
 
 ################################################################################
-################################################################################
-# Entry point...
+# Entry point for testing...
 #
 if __name__ == "__main__":
 	main()

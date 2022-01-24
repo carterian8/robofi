@@ -119,7 +119,8 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
         'torch',
-        'yfinance'
+        'yfinance',
+        'pytz'
     ],  # Optional
 
     
